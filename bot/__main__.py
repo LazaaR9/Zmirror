@@ -61,13 +61,12 @@ async def start(_, message):
     elif config_dict['DM_MODE'] and message.chat.type != message.chat.type.SUPERGROUP:
         start_string = 'Bot Started.\n' \
                        'Now I will send all of your stuffs here.\n' \
-                       'Join for UPDATES: @Rulf_Encoder.\n' \
+                       'UPDATES: @Rulf_Encoder.\n' \
                        'Repo: @Z_Mirror'
     elif not config_dict['DM_MODE'] and message.chat.type != message.chat.type.SUPERGROUP:
         start_string = 'Sorry, you cannot use me here!\n' \
-                       'Join for UPDATES: @Rulf_Encoder.\n' \
+                       'UPDATES: @Rulf_Encoder.\n' \
                        'Thank You' \
-                       'Repo: @Z_Mirror'
     else:
         tag = message.from_user.mention
         start_string = 'Start me in DM, not in the group.\n' \
